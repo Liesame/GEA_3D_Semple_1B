@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemyChaser : MonoBehaviour
 {
@@ -17,8 +17,6 @@ public class EnemyChaser : MonoBehaviour
         if (p != null) player = p.transform;
     }
 
-
-    // Update is called once per frame
     void Update()
     {
         if (player == null) return;
@@ -42,5 +40,4 @@ public class EnemyChaser : MonoBehaviour
             player.GetComponent<Health>().TakeDamage(damage);
         }
     }
-
 }

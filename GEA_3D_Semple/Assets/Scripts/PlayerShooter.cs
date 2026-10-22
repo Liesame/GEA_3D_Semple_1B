@@ -1,13 +1,12 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerShooter : MonoBehaviour
 {
-
     public GameObject bulletPrefab;
     public Transform firePoint;
     public float bulletSpeed = 20f;
-    public float fireCooldown = 0.2f;
+    public float fireCooldown = 0.2f;   // 연속 클릭 간격
 
     float lastFireTime = -999f;
 
@@ -21,18 +20,5 @@ public class PlayerShooter : MonoBehaviour
             firePoint.position, firePoint.rotation);
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
         rb.linearVelocity = firePoint.forward * bulletSpeed;
-    }
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
