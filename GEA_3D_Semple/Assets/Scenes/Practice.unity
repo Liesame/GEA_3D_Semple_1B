@@ -132,6 +132,9 @@ GameObject:
   - component: {fileID: 1403375651}
   - component: {fileID: 1403375650}
   - component: {fileID: 1403375652}
+  - component: {fileID: 1403375653}
+  - component: {fileID: 1403375654}
+  - component: {fileID: 1403375655}
   m_Layer: 0
   m_Name: Tester
   m_TagString: Untagged
@@ -217,6 +220,48 @@ MonoBehaviour:
   totalDamage: 250
   hits: 20
   expRate: 1.5
+--- !u!114 &1403375653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403375647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f81808ea7b6d484680871c4d9166bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Lesson10
+--- !u!114 &1403375654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403375647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625f70afbd898c94890a86aaacc8315e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DamagePractice
+  attack: 12
+  defense: 5
+  isCritical: 1
+  targetIsBoss: 1
+--- !u!114 &1403375655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403375647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cbfbd3a0690fec418b5a13e59deba33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelSystem
+  expPerKill: 35000
+  killCount: 3
 --- !u!1 &1488101459
 GameObject:
   m_ObjectHideFlags: 0

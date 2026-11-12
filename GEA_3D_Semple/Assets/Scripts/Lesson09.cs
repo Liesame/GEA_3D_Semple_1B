@@ -3,7 +3,6 @@ using UnityEngine;
 public class Lesson09 : MonoBehaviour
 {
     public int gold = 100;
-    int potion = 3;
 
     [ContextMenu("골드 보기")]
     void ShowGold()
